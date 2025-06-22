@@ -46,10 +46,10 @@ def start_timer():
         count_down(long_break_seconds)
         title.config(text="Break")
     elif reps % 2 == 0:
-        count_down(5)
+        count_down(short_break_seconds)
         title.config(text="Break")
     else:
-        count_down(5)
+        count_down(work_seconds)
         title.config(text="Timer")
 
 
@@ -99,9 +99,6 @@ reset_button.grid(column=2,row=3)
 
 check_marks = Label(padx=10,pady=10,fg= GREEN,bg= YELLOW,font=(FONT_NAME,20,"normal"))
 check_marks.grid(column=1,row=2)
-
-
-
 
 
 
